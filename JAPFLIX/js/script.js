@@ -52,9 +52,6 @@ fetch(apiUrl)
       const modalDuracion = document.getElementById("modalDuracion");
       const modalPresupuesto = document.getElementById("modalPresupuesto");
       const modalGanancias = document.getElementById("modalGanancias");
-      const detalleTitulo = document.getElementById("detalleTitulo");
-      const detalleSinopsis = document.getElementById("detalleSinopsis");
-      const detalleGeneros = document.getElementById("detalleGeneros");
       {
         const detalleTitulo = document.getElementById("detalleTitulo");
   const detalleSinopsis = document.getElementById("detalleSinopsis");
