@@ -13,6 +13,35 @@
 </head>
 
 <body class="bg-dark">
+  <header>
+    <div class="offcanvas offcanvas-top  text-bg-dark" tabindex="-1" id="offcanvasDark"
+      aria-labelledby="offcanvasDarkLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkLabel">Tittle</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvasDark"
+          aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>overview</p>
+        <hr>
+        <p>genres</p>
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          More
+        </button>
+        <ul class="dropdown-menu" id="">
+          <li><a class="dropdown-item" href="#">Year: </a></li>
+          <li><a class="dropdown-item" href="#">Runtime: </a></li>
+          <li><a class="dropdown-item" href="#">Budget: </a></li>
+          <li><a class="dropdown-item" href="#">Revenue: </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    </div>
+
+  </header>
   <main>
     <div class="text-center container">
       <div class="row py-lg-3">
@@ -21,6 +50,8 @@
           <input type="search" class="form-control" name="buscar" id="inputBuscar" placeholder="Ej.: The Lion King">
           <button class="btn btn-primary m-2" id="btnBuscar">Buscar</button>
         </div>
+
+        <button id="holis">holis</button>
       </div>
     </div>
 
