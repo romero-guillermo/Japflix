@@ -90,8 +90,8 @@ fetch(apiUrl)
   const peliculaDetalle = document.getElementById("peliculaDetalle");
   peliculaDetalle.style.display = "block";
 };
-    
-    
+
+
       // Mostrar el contenedor de detalle
       const peliculaDetalle = document.getElementById("peliculaDetalle");
       peliculaDetalle.style.display = "block";
@@ -111,31 +111,31 @@ fetch(apiUrl)
     peliculas.forEach((pelicula) => {
         const elemento = document.createElement("li");
         elemento.classList.add("list-group-item");
-      
+
         // Título
         const titulo = document.createElement("h5");
         titulo.textContent = pelicula.title;
         elemento.appendChild(titulo);
-      
+
         // Tagline
         const tagline = document.createElement("p");
         tagline.textContent = pelicula.tagline;
         elemento.appendChild(tagline);
-      
+
         // Votación (estrellas)
         const votacion = document.createElement("span");
         const estrellas = '\u2605'.repeat(Math.round(pelicula.vote_average / 2)); // Convierte el voto en estrellas
         votacion.textContent = estrellas;
         elemento.appendChild(votacion);
-      
+
         // Evento de clic para mostrar detalle
         elemento.addEventListener("click", () => {
           mostrarDetalle(pelicula);
         });
-      
+
         lista.appendChild(elemento);
       });
-      
+
 
     // Evento de búsqueda
     const inputBuscar = document.getElementById("inputBuscar");

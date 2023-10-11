@@ -29,10 +29,14 @@ main {
 
 #peliculaDetalle {
     color: white;
+    margin-left: 20px;
   }
 
   /* Cambiar el color del texto del botón y el desplegable */
   #detalleBoton button,
   #detalleDesplegable {
     color: white;
+    margin-left: 20px;
+    margin-top: 15px;
   }
+
