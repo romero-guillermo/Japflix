@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => {
 const apiUrl = `https://japceibal.github.io/japflix_api/movies-data.json`;
 
 fetch(apiUrl)
@@ -14,4 +15,12 @@ fetch(apiUrl)
     console.error(error);
   });
 
+});
 
+var seleccion = document.getElementById("holis")
+var canvas = document.getElementById("offcanvasDark")
+seleccion.addEventListener("click", () => { 
+  canvas.classList.add(show)
+
+
+})
