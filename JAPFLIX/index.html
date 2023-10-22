@@ -23,13 +23,26 @@
       </div>
     </div>
 
-<!-- Contenedor de detalles de la película -->
-<div id="peliculaDetalle" style="display: none;">
-  <h2 id="detalleTitulo"></h2>
-  <p id="detalleSinopsis"></p>
-  <p id="detalleGeneros"></p>
-  <div id="detalleBoton"></div>
-  <div id="detalleDesplegable"></div>
+<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasDetalle" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body" id="detalleOffcanvasBody">
+    <h2 id="detalleTitulo"></h2>
+    <p id="detalleSinopsis"></p>
+    <hr>
+    <div class="d-flex justify-content-between">
+    <p id="detalleGeneros"></p>
+      <div class="btn-group" id="detalleBoton" >
+        <button id="dropdownMenuButton" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" >
+        Más detalles
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="detalleDesplegable" >
+        <!-- Contenido del menú desplegable -->
+      </ul>
+    </div>
+  </div>
+  </div>
 </div>
 
 
@@ -38,9 +51,6 @@
       </ul>
     </div>
 
-    <div class="modal fade" id="modalDetalle">
-      <!-- Contenido del modal aquí -->
-    </div>
   </main>
 
   <footer class="text-muted py-3">

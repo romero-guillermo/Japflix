@@ -36,3 +36,9 @@ main {
   #detalleDesplegable {
     color: white;
   }
+  .dropdown-menu {
+    position: absolute !important;
+}
+.offcanvas-body {
+    overflow-y: visible !important;
+}
